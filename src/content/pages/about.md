@@ -8,7 +8,7 @@ aliases:
   - about-me
   - about-us
 ---
-Welcome to **Astro Modular**, an Astro blog theme template designed for Obsidian users, created by [David V. Kimball](https://davidvkimball.com). This theme turns Obsidian into a powerful CMS for instant blog publishing.
+Welcome to my 
 
 ## Philosophy
 
