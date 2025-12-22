@@ -2,7 +2,9 @@
 title: Renew Kubernetes Certificate
 date: 2025-12-22
 description: ""
-tags: []
+tags:
+  - kubernetes
+  - devops
 image: attachments/kubernetes-banner.png
 imageAlt: ""
 imageOG: false
