@@ -6,7 +6,7 @@ tags:
   - kubernetes
   - ceph
   - devops
-image: ""
+image: attachments/disk-banner.png
 imageAlt: ""
 imageOG: false
 hideCoverImage: false

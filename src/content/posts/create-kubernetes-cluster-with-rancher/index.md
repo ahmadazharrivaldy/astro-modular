@@ -6,7 +6,7 @@ tags:
   - kubernetes
   - rancher
   - devops
-image: attachments/kubernetes_banner.png
+image: attachments/kubernetes-banner.png
 imageAlt: ""
 imageOG: false
 hideCoverImage: false
