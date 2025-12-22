@@ -11,7 +11,7 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 ---
-After you create a Kubernetes cluster, you must take care of the expiration date of the Kubernetes certificate, because if the certificate expires, communication between Kubernetes components or APIs will fail. The duration usually is 365 days.
+After you create a Kubernetes cluster, you must maintain expiration date of the Kubernetes certificate, because if the certificate expires, communication between Kubernetes components or APIs will fail.
 
 ## Backup Kubernetes Certificate
 
