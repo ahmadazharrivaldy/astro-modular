@@ -34,6 +34,149 @@
   "duplicateThreshold": 80,
   "cachedGlobalResults": [
     {
+      "file": "posts/renew-kubernetes-certificate/index.md",
+      "displayName": "Renew Kubernetes Certificate",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 28 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 0 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [
+          {
+            "passed": false,
+            "message": "Keyword not found in title",
+            "suggestion": "Include your target keyword in the title",
+            "severity": "warning"
+          }
+        ],
+        "keywordInDescription": [
+          {
+            "passed": true,
+            "message": "Keyword found in description",
+            "severity": "info"
+          }
+        ],
+        "keywordInHeadings": [
+          {
+            "passed": false,
+            "message": "Keyword not found in H1",
+            "suggestion": "Include your target keyword in the H1 heading for better SEO",
+            "severity": "warning"
+          }
+        ],
+        "keywordInSlug": [
+          {
+            "passed": false,
+            "message": "Target keyword \"\"\"\" not found in slug",
+            "suggestion": "Include your target keyword in the filename",
+            "severity": "warning"
+          }
+        ],
+        "slugFormat": [],
+        "keywordDensity": [
+          {
+            "passed": false,
+            "message": "Keyword density too low: 0.0%",
+            "suggestion": "Aim for at least 1% density",
+            "severity": "warning"
+          }
+        ],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 84 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 19.1 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 40,
+      "issuesCount": 0,
+      "warningsCount": 9,
+      "noticesCount": 0
+    },
+    {
       "file": "posts/create-persistent-volume-with-ceph-rbd/index.md",
       "displayName": "Create Persistent Volume with Ceph RBD",
       "checks": {
@@ -103,14 +246,14 @@
         "headingOrder": [
           {
             "passed": true,
-            "message": "No heading structure issues found",
+            "message": "Heading structure is correct",
             "severity": "info"
           }
         ],
         "contentLength": [
           {
             "passed": false,
-            "message": "Content too short: 2 words",
+            "message": "Content too short: 163 words",
             "suggestion": "Aim for at least 300 words",
             "severity": "warning"
           }
@@ -164,7 +307,7 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: -3.0 (Very easy to read)",
+            "message": "Good reading level: 1.6 (Very easy to read)",
             "severity": "info"
           }
         ]
@@ -253,7 +396,7 @@
         "contentLength": [
           {
             "passed": false,
-            "message": "Content too short: 228 words",
+            "message": "Content too short: 226 words",
             "suggestion": "Aim for at least 300 words",
             "severity": "warning"
           }
@@ -313,7 +456,7 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: 6.0 (Easy to read)",
+            "message": "Good reading level: 6.1 (Easy to read)",
             "severity": "info"
           }
         ]
@@ -1388,6 +1531,6 @@
       "noticesCount": 17
     }
   ],
-  "lastScanTimestamp": 1766373063671,
+  "lastScanTimestamp": 1766387997570,
   "showNotices": true
 }
