@@ -1,10 +1,11 @@
 ---
 title: Build HA RKE2 Cluster
 date: 2025-12-22
-description: this is description
+description:
 tags:
   - kubernetes
   - rancher
+  - devops
 image: ""
 imageAlt: ""
 imageOG: false
@@ -25,7 +26,7 @@ I already provisioned 1 server and 2 agent with minimum specification requiremen
 | server   | 192.168.10.20 | 2   | 4GB    | 50GB |
 | agent01  | 192.168.10.21 | 4   | 8GB    | 50GB |
 | agent02  | 192.168.10.22 | 4   | 8GB    | 50GB |
-## Step 1: Configure All Hosts
+## Configure All Hosts
 
 Update and upgrade linux package lists
 

@@ -46,7 +46,13 @@
       },
       {
         "title": "About",
-        "url": "/about/"
+        "url": "/about/",
+        "children": [
+          {
+            "title": "Privacy Policy",
+            "url": "/privacy-policy/"
+          }
+        ]
       }
     ],
     "social": [
