@@ -14,7 +14,7 @@ imageOG: true
 hideCoverImage: true
 hideTOC: false
 targetKeyword: vault cms
-draft: false
+draft: true
 aliases:
   - astro-suite-vault-modular-guide
   - astro-suite-obsidian-vault-guide-astro-modular

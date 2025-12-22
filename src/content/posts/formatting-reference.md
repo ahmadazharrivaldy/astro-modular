@@ -15,7 +15,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword:
-draft: false
+draft: true
 ---
 This post demonstrates all the markdown, extended markdown, and other embed features available in Astro Modular. Use this as both a reference guide and a showcase of what's possible.
 

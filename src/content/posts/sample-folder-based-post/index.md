@@ -11,7 +11,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: true
 targetKeyword: ""
-draft: false
+draft: true
 ---
 This is a test post to demonstrate how the folder-based approach works. The folder name `sample-folder-post` should become the slug for this post.
 
