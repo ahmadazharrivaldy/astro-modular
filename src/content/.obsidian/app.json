@@ -2,7 +2,7 @@
   "showInlineTitle": false,
   "promptDelete": true,
   "showIndentGuide": false,
-  "attachmentFolderPath": "./attachments",
+  "attachmentFolderPath": "./",
   "userIgnoreFilters": [
     "bases/"
   ],

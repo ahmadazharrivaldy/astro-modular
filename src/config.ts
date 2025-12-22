@@ -181,13 +181,13 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   // Site Information
   // [CONFIG:SITE_URL]
-  site: "https://astro-modular.netlify.app",
+  site: "https://dombajantan.netlify.app",
   // [CONFIG:SITE_TITLE]
-  title: "Astro Modular",
+  title: "dombajantan",
   // [CONFIG:SITE_DESCRIPTION]
-  description: "A flexible blog theme designed for Obsidian users.",
+  description: "Sharing knowledge for free",
   // [CONFIG:SITE_AUTHOR]
-  author: "David V. Kimball",
+  author: "Rivaldy Ahmad Azhar",
   // [CONFIG:SITE_LANGUAGE]
   language: "en",
   // [CONFIG:FAVICON_THEME_ADAPTIVE]
@@ -197,7 +197,7 @@ export const siteConfig: SiteConfig = {
 
   // Global Settings
   // [CONFIG:THEME]
-  theme: "oxygen", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
+  theme: "things", // Available themes: "minimal" | "oxygen" | "atom" | "ayu" | "catppuccin" | "charcoal" | "dracula" | "everforest" | "flexoki" | "gruvbox" | "macos" | "nord" | "obsidian" | "rose-pine" | "sky" | "solarized" | "things" | "custom"
   // [CONFIG:CUSTOM_THEME_FILE]
   customThemeFile: "custom", // Only used if theme is set to "custom" above. Filename in src/themes/custom/ (without .ts extension)
   // [CONFIG:AVAILABLE_THEMES]
@@ -218,13 +218,13 @@ export const siteConfig: SiteConfig = {
   },
   layout: {
     // [CONFIG:LAYOUT_CONTENT_WIDTH]
-    contentWidth: "45rem",
+    contentWidth: "42rem",
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
     enabled: true,
     // [CONFIG:TABLE_OF_CONTENTS_DEPTH]
-    depth: 4, // Maximum heading depth to include in ToC (2-6, where 2=H2, 3=H3, etc.)
+    depth: 2, // Maximum heading depth to include in ToC (2-6, where 2=H2, 3=H3, etc.)
   },
   footer: {
     // [CONFIG:FOOTER_ENABLED]
@@ -232,14 +232,14 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:FOOTER_CONTENT]
     content: `© 2025 {author}. Built with the <a href="https://github.com/davidvkimball/astro-modular" target="_blank">Astro Modular</a> theme.`,
     // [CONFIG:FOOTER_SHOW_SOCIAL_ICONS]
-    showSocialIconsInFooter: true,
+    showSocialIconsInFooter: false,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
   hideScrollBar: false,
   // [CONFIG:SCROLL_TO_TOP]
   scrollToTop: true,
   // [CONFIG:FEATURE_BUTTON]
-  featureButton: "mode", // "mode" | "graph" | "theme" | "none"
+  featureButton: "none", // "mode" | "graph" | "theme" | "none"
   deployment: {
     // [CONFIG:DEPLOYMENT_PLATFORM]
     platform: "netlify", // "netlify" | "vercel" | "github-pages" | "cloudflare-workers" - sets redirect configuration for the chosen platform (Cloudflare Workers uses Workers-compatible config)
@@ -267,7 +267,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:COMMAND_PALETTE_SECTIONS_QUICK_ACTIONS]
       quickActions: true,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_PAGES]
-      pages: true,
+      pages: false,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_SOCIAL]
       social: true,
     },
@@ -277,7 +277,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
       toggleMode: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
-      graphView: true,
+      graphView: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
       changeTheme: true,
     },
@@ -306,30 +306,24 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
     showNavigation: true,
     // [CONFIG:NAVIGATION_STYLE]
-    style: "traditional", // 'minimal' or 'traditional'
+    style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
     showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
       { title: "Posts", url: "/posts/" },
-      { title: "Projects", url: "/projects/" },
-      { title: "Docs", url: "/docs/" },
-      { title: "About", url: "/about/",
-        children: [
-          { title: "Privacy Policy", url: "/privacy-policy/" }
-        ] },
-      { title: "GitHub", url: "https://github.com/davidvkimball/astro-modular" }
+      { title: "About", url: "/about/" }
     ],
     // [CONFIG:NAVIGATION_SOCIAL]
     social: [
       {
-        title: "X",
-        url: "https://x.com/davidvkimball",
-        icon: "x-twitter",
+        title: "Linkedin",
+        url: "https://www.linkedin.com/in/rivaldy-ahmad-azhar/",
+        icon: "linkedin",
       },
       {
         title: "GitHub",
-        url: "https://github.com/davidvkimball",
+        url: "https://github.com/ahmadazharrivaldy",
         icon: "github",
       },
     ],
@@ -338,16 +332,16 @@ export const siteConfig: SiteConfig = {
   // Optional Content Types - Enable/disable optional content sections (takes priority over homeOptions)
   optionalContentTypes: {
     // [CONFIG:OPTIONAL_CONTENT_TYPES_PROJECTS]
-    projects: true, // Enable projects section
+    projects: false, // Enable projects section
     // [CONFIG:OPTIONAL_CONTENT_TYPES_DOCS]
-    docs: true, // Enable documentation section
+    docs: false, // Enable documentation section
   },
 
   // Home Options
   homeOptions: {
     featuredPost: {
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_ENABLED]
-      enabled: true, // Show featured post on homepage
+      enabled: false, // Show featured post on homepage
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_TYPE]
       type: "latest", // "latest" or "featured"
       // [CONFIG:HOME_OPTIONS_FEATURED_POST_SLUG]
@@ -391,11 +385,11 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_ENABLED]
       enabled: true,
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_COMPACT]
-      linkedMentionsCompact: false,
+      linkedMentionsCompact: true,
     },
     graphView: {
       // [CONFIG:POST_OPTIONS_GRAPH_VIEW_ENABLED]
-      enabled: true,
+      enabled: false,
       // [CONFIG:POST_OPTIONS_GRAPH_VIEW_SHOW_IN_SIDEBAR]
       showInSidebar: true,
       // [CONFIG:POST_OPTIONS_GRAPH_VIEW_MAX_NODES]
@@ -406,9 +400,9 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_POST_NAVIGATION]
     postNavigation: true,
     // [CONFIG:POST_OPTIONS_SHOW_POST_CARD_COVER_IMAGES]
-    showPostCardCoverImages: "featured-and-posts", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
+    showPostCardCoverImages: "posts", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
     // [CONFIG:POST_OPTIONS_POST_CARD_ASPECT_RATIO]
-    postCardAspectRatio: "og", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
+    postCardAspectRatio: "custom", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
     // [CONFIG:POST_OPTIONS_CUSTOM_POST_CARD_ASPECT_RATIO]
     customPostCardAspectRatio: "2.5/1", // Only used when postCardAspectRatio is "custom" (e.g., "2.5/1")
     comments: {

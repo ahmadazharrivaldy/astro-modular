@@ -1,9 +1,9 @@
 {
-  "runWizardOnStartup": true,
-  "currentTemplate": "standard",
-  "currentTheme": "oxygen",
+  "runWizardOnStartup": false,
+  "currentTemplate": "compact",
+  "currentTheme": "things",
   "customThemeFile": "custom",
-  "contentOrganization": "file-based",
+  "contentOrganization": "folder-based",
   "themeColors": {
     "mode": "simple",
     "simpleColors": {
@@ -12,10 +12,10 @@
     }
   },
   "siteInfo": {
-    "site": "https://astro-modular.netlify.app",
-    "title": "Astro Modular",
-    "description": "A flexible blog theme designed for Obsidian users.",
-    "author": "David V. Kimball",
+    "site": "https://dombajantan.netlify.app",
+    "title": "dombajantan",
+    "description": "Sharing knowledge for free",
+    "author": "Rivaldy Ahmad Azhar",
     "language": "en",
     "faviconThemeAdaptive": true,
     "defaultOgImageAlt": "Astro Modular logo."
@@ -25,7 +25,7 @@
   },
   "tableOfContents": {
     "enabled": true,
-    "depth": 4
+    "depth": 2
   },
   "footer": {
     "enabled": true,
@@ -45,37 +45,19 @@
         "url": "/posts/"
       },
       {
-        "title": "Projects",
-        "url": "/projects/"
-      },
-      {
-        "title": "Docs",
-        "url": "/docs/"
-      },
-      {
         "title": "About",
-        "url": "/about/",
-        "children": [
-          {
-            "title": "Privacy Policy",
-            "url": "/privacy-policy/"
-          }
-        ]
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com/davidvkimball/astro-modular"
+        "url": "/about/"
       }
     ],
     "social": [
       {
-        "title": "X",
-        "url": "https://x.com/davidvkimball",
-        "icon": "x-twitter"
+        "title": "Linkedin",
+        "url": "https://www.linkedin.com/in/rivaldy-ahmad-azhar/",
+        "icon": "linkedin"
       },
       {
         "title": "GitHub",
-        "url": "https://github.com/davidvkimball",
+        "url": "https://github.com/ahmadazharrivaldy",
         "icon": "github"
       }
     ]
@@ -98,7 +80,7 @@
     "quickActions": {
       "enabled": true,
       "toggleMode": true,
-      "graphView": true,
+      "graphView": false,
       "changeTheme": true
     }
   },
@@ -131,10 +113,10 @@
     "tags": true,
     "linkedMentions": {
       "enabled": true,
-      "linkedMentionsCompact": false
+      "linkedMentionsCompact": true
     },
     "graphView": {
-      "enabled": true,
+      "enabled": false,
       "showInSidebar": true,
       "maxNodes": 100,
       "showOrphanedPosts": true
@@ -163,25 +145,21 @@
   },
   "features": {
     "commandPalette": true,
-    "tableOfContents": true,
     "readingTime": true,
     "linkedMentions": true,
-    "linkedMentionsCompact": false,
-    "graphView": true,
+    "linkedMentionsCompact": true,
+    "graphView": false,
     "postNavigation": true,
     "hideScrollBar": false,
     "scrollToTop": true,
-    "showSocialIconsInFooter": true,
+    "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": false,
-    "featureButton": "mode",
-    "showPostCardCoverImages": "featured-and-posts",
-    "postCardAspectRatio": "og",
-    "customPostCardAspectRatio": "2.5/1",
+    "featureButton": "none",
     "quickActions": {
       "enabled": true,
       "toggleMode": true,
-      "graphView": true,
+      "graphView": false,
       "changeTheme": true
     }
   },
@@ -244,8 +222,8 @@
     }
   },
   "optionalContentTypes": {
-    "projects": true,
-    "docs": true
+    "projects": false,
+    "docs": false
   },
   "availableThemes": "default",
   "customThemes": "",
