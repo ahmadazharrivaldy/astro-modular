@@ -1,6 +1,6 @@
 {
   "runWizardOnStartup": false,
-  "currentTemplate": "compact",
+  "currentTemplate": "standard",
   "currentTheme": "things",
   "customThemeFile": "custom",
   "contentOrganization": "folder-based",
@@ -25,7 +25,7 @@
   },
   "tableOfContents": {
     "enabled": true,
-    "depth": 2
+    "depth": 4
   },
   "footer": {
     "enabled": true,
@@ -37,7 +37,7 @@
   },
   "navigation": {
     "showNavigation": true,
-    "style": "minimal",
+    "style": "traditional",
     "showMobileMenu": true,
     "pages": [
       {
@@ -80,19 +80,19 @@
     },
     "sections": {
       "quickActions": true,
-      "pages": false,
+      "pages": true,
       "social": true
     },
     "quickActions": {
       "enabled": true,
       "toggleMode": true,
-      "graphView": false,
+      "graphView": true,
       "changeTheme": true
     }
   },
   "homeOptions": {
     "featuredPost": {
-      "enabled": false,
+      "enabled": true,
       "type": "latest",
       "slug": "getting-started"
     },
@@ -119,17 +119,17 @@
     "tags": true,
     "linkedMentions": {
       "enabled": true,
-      "linkedMentionsCompact": true
+      "linkedMentionsCompact": false
     },
     "graphView": {
-      "enabled": false,
+      "enabled": true,
       "showInSidebar": true,
       "maxNodes": 100,
       "showOrphanedPosts": true
     },
     "postNavigation": true,
-    "showPostCardCoverImages": "posts",
-    "postCardAspectRatio": "custom",
+    "showPostCardCoverImages": "featured-and-posts",
+    "postCardAspectRatio": "og",
     "customPostCardAspectRatio": "2.5/1",
     "comments": {
       "enabled": false,
@@ -153,19 +153,19 @@
     "commandPalette": true,
     "readingTime": true,
     "linkedMentions": true,
-    "linkedMentionsCompact": true,
-    "graphView": false,
+    "linkedMentionsCompact": false,
+    "graphView": true,
     "postNavigation": true,
     "hideScrollBar": false,
     "scrollToTop": true,
-    "showSocialIconsInFooter": false,
+    "showSocialIconsInFooter": true,
     "profilePicture": false,
     "comments": false,
-    "featureButton": "none",
+    "featureButton": "mode",
     "quickActions": {
       "enabled": true,
       "toggleMode": true,
-      "graphView": false,
+      "graphView": true,
       "changeTheme": true
     }
   },
@@ -228,8 +228,8 @@
     }
   },
   "optionalContentTypes": {
-    "projects": false,
-    "docs": false
+    "projects": true,
+    "docs": true
   },
   "availableThemes": "default",
   "customThemes": "",
