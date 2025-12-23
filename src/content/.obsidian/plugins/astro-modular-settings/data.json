@@ -1,6 +1,6 @@
 {
   "runWizardOnStartup": false,
-  "currentTemplate": "compact",
+  "currentTemplate": "minimal",
   "currentTheme": "things",
   "customThemeFile": "custom",
   "contentOrganization": "folder-based",
@@ -24,21 +24,21 @@
     "contentWidth": "45rem"
   },
   "tableOfContents": {
-    "enabled": true,
-    "depth": 2
+    "enabled": false,
+    "depth": 4
   },
   "footer": {
     "enabled": true,
     "content": "© 2025 {author}. Built with the <a href=\"https://github.com/davidvkimball/astro-modular\" target=\"_blank\">Astro Modular</a> theme.",
-    "showSocialIconsInFooter": true
+    "showSocialIconsInFooter": false
   },
   "seo": {
     "defaultOgImageAlt": "Astro Modular logo."
   },
   "navigation": {
-    "showNavigation": true,
-    "style": "traditional",
-    "showMobileMenu": true,
+    "showNavigation": false,
+    "style": "minimal",
+    "showMobileMenu": false,
     "pages": [
       {
         "title": "Posts",
@@ -70,29 +70,29 @@
   },
   "commandPalette": {
     "enabled": true,
-    "shortcut": "ctrl+K",
-    "placeholder": "Search posts",
+    "shortcut": "",
+    "placeholder": "Search content",
     "search": {
       "posts": true,
-      "pages": false,
+      "pages": true,
       "projects": false,
       "docs": false
     },
     "sections": {
-      "quickActions": true,
-      "pages": true,
-      "social": true
+      "quickActions": false,
+      "pages": false,
+      "social": false
     },
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
+      "enabled": false,
+      "toggleMode": false,
       "graphView": false,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "homeOptions": {
     "featuredPost": {
-      "enabled": true,
+      "enabled": false,
       "type": "latest",
       "slug": "getting-started"
     },
@@ -109,17 +109,17 @@
       "count": 3
     },
     "blurb": {
-      "placement": "below"
+      "placement": "none"
     }
   },
   "postOptions": {
     "postsPerPage": 6,
-    "readingTime": true,
-    "wordCount": true,
-    "tags": true,
+    "readingTime": false,
+    "wordCount": false,
+    "tags": false,
     "linkedMentions": {
-      "enabled": true,
-      "linkedMentionsCompact": true
+      "enabled": false,
+      "linkedMentionsCompact": false
     },
     "graphView": {
       "enabled": false,
@@ -127,8 +127,8 @@
       "maxNodes": 100,
       "showOrphanedPosts": true
     },
-    "postNavigation": true,
-    "showPostCardCoverImages": "featured-and-posts",
+    "postNavigation": false,
+    "showPostCardCoverImages": "none",
     "postCardAspectRatio": "og",
     "customPostCardAspectRatio": "2.5/1",
     "comments": {
@@ -151,22 +151,22 @@
   },
   "features": {
     "commandPalette": true,
-    "readingTime": true,
-    "linkedMentions": true,
-    "linkedMentionsCompact": true,
+    "readingTime": false,
+    "linkedMentions": false,
+    "linkedMentionsCompact": false,
     "graphView": false,
-    "postNavigation": true,
-    "hideScrollBar": false,
-    "scrollToTop": true,
+    "postNavigation": false,
+    "hideScrollBar": true,
+    "scrollToTop": false,
     "showSocialIconsInFooter": false,
     "profilePicture": false,
     "comments": false,
     "featureButton": "none",
     "quickActions": {
-      "enabled": true,
-      "toggleMode": true,
+      "enabled": false,
+      "toggleMode": false,
       "graphView": false,
-      "changeTheme": true
+      "changeTheme": false
     }
   },
   "typography": {
