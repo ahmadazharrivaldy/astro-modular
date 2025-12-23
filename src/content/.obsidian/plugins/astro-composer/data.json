@@ -72,5 +72,6 @@
   "linkBasePath": "/posts/",
   "enableAutoRename": true,
   "enableAutoInsertFrontmatter": true,
-  "draftStyle": "filename"
+  "draftStyle": "filename",
+  "indexFileName": "index"
 }
