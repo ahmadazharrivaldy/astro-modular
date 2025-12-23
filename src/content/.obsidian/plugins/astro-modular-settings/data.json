@@ -30,7 +30,7 @@
   "footer": {
     "enabled": true,
     "content": "© 2025 {author}. Built with the <a href=\"https://github.com/davidvkimball/astro-modular\" target=\"_blank\">Astro Modular</a> theme.",
-    "showSocialIconsInFooter": false
+    "showSocialIconsInFooter": true
   },
   "seo": {
     "defaultOgImageAlt": "Astro Modular logo."
