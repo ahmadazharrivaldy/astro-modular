@@ -218,13 +218,13 @@ export const siteConfig: SiteConfig = {
   },
   layout: {
     // [CONFIG:LAYOUT_CONTENT_WIDTH]
-    contentWidth: "40rem",
+    contentWidth: "42rem",
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
-    enabled: false,
+    enabled: true,
     // [CONFIG:TABLE_OF_CONTENTS_DEPTH]
-    depth: 4, // Maximum heading depth to include in ToC (2-6, where 2=H2, 3=H3, etc.)
+    depth: 2, // Maximum heading depth to include in ToC (2-6, where 2=H2, 3=H3, etc.)
   },
   footer: {
     // [CONFIG:FOOTER_ENABLED]
@@ -235,9 +235,9 @@ export const siteConfig: SiteConfig = {
     showSocialIconsInFooter: false,
   },
   //[CONFIG:HIDE_SCROLL_BAR]
-  hideScrollBar: true,
+  hideScrollBar: false,
   // [CONFIG:SCROLL_TO_TOP]
-  scrollToTop: false,
+  scrollToTop: true,
   // [CONFIG:FEATURE_BUTTON]
   featureButton: "none", // "mode" | "graph" | "theme" | "none"
   deployment: {
@@ -250,14 +250,14 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:COMMAND_PALETTE_ENABLED]
     enabled: true,
     // [CONFIG:COMMAND_PALETTE_SHORTCUT]
-    shortcut: "",
+    shortcut: "ctrl+K",
     // [CONFIG:COMMAND_PALETTE_PLACEHOLDER]
-    placeholder: "Search content",
+    placeholder: "Search posts",
     search: {
       // [CONFIG:COMMAND_PALETTE_SEARCH_POSTS]
       posts: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PAGES]
-      pages: true,
+      pages: false,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PROJECTS]
       projects: false,
       // [CONFIG:COMMAND_PALETTE_SEARCH_DOCS]
@@ -265,21 +265,21 @@ export const siteConfig: SiteConfig = {
     },
     sections: {
       // [CONFIG:COMMAND_PALETTE_SECTIONS_QUICK_ACTIONS]
-      quickActions: false,
+      quickActions: true,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_PAGES]
       pages: false,
       // [CONFIG:COMMAND_PALETTE_SECTIONS_SOCIAL]
-      social: false,
+      social: true,
     },
     quickActions: {
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_TOGGLE_MODE]
-      toggleMode: false,
+      toggleMode: true,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_GRAPH_VIEW]
       graphView: false,
       // [CONFIG:COMMAND_PALETTE_QUICK_ACTIONS_CHANGE_THEME]
-      changeTheme: false,
+      changeTheme: true,
     },
   },
 
@@ -304,11 +304,11 @@ export const siteConfig: SiteConfig = {
   // Navigation
   navigation: {
     // [CONFIG:NAVIGATION_SHOW_NAVIGATION]
-    showNavigation: false,
+    showNavigation: true,
     // [CONFIG:NAVIGATION_STYLE]
     style: "minimal", // 'minimal' or 'traditional'
     // [CONFIG:NAVIGATION_SHOW_MOBILE_MENU]
-    showMobileMenu: false,
+    showMobileMenu: true,
     // [CONFIG:NAVIGATION_PAGES]
     pages: [
       { title: "Posts", url: "/posts/" },
@@ -370,7 +370,7 @@ export const siteConfig: SiteConfig = {
     },
     blurb: {
       // [CONFIG:HOME_OPTIONS_BLURB_PLACEMENT]
-      placement: "none", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
+      placement: "below", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
     },
   },
 
@@ -379,16 +379,16 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_POSTS_PER_PAGE]
     postsPerPage: 6,
     // [CONFIG:POST_OPTIONS_READING_TIME]
-    readingTime: false,
+    readingTime: true,
     // [CONFIG:POST_OPTIONS_WORD_COUNT]
-    wordCount: false,
+    wordCount: true,
     // [CONFIG:POST_OPTIONS_TAGS]
-    tags: false,
+    tags: true,
     linkedMentions: {
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_ENABLED]
-      enabled: false,
+      enabled: true,
       // [CONFIG:POST_OPTIONS_LINKED_MENTIONS_COMPACT]
-      linkedMentionsCompact: false,
+      linkedMentionsCompact: true,
     },
     graphView: {
       // [CONFIG:POST_OPTIONS_GRAPH_VIEW_ENABLED]
@@ -401,11 +401,11 @@ export const siteConfig: SiteConfig = {
       showOrphanedPosts: true,
     },
     // [CONFIG:POST_OPTIONS_POST_NAVIGATION]
-    postNavigation: false,
+    postNavigation: true,
     // [CONFIG:POST_OPTIONS_SHOW_POST_CARD_COVER_IMAGES]
-    showPostCardCoverImages: "none", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
+    showPostCardCoverImages: "posts", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
     // [CONFIG:POST_OPTIONS_POST_CARD_ASPECT_RATIO]
-    postCardAspectRatio: "og", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
+    postCardAspectRatio: "custom", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
     // [CONFIG:POST_OPTIONS_CUSTOM_POST_CARD_ASPECT_RATIO]
     customPostCardAspectRatio: "2.5/1", // Only used when postCardAspectRatio is "custom" (e.g., "2.5/1")
     comments: {
