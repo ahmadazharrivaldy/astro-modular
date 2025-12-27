@@ -14,7 +14,7 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 ---
-Rancher is my preferred platform for managing Kubernetes clusters due to its ease of use and extensive feature set. It consistently stands out as one of the best distributions I’ve used to streamline day-to-day operations.
+Rancher is my preferred platform for managing Kubernetes clusters due to its ease of use and extensive feature set. It simplifies complex operational tasks, making it much easier to scale and secure clusters. Rancher is one of the best distributions available for anyone looking to optimize their Kubernetes workflow.
 
 ## Environment
 
@@ -48,7 +48,7 @@ sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
 
-Enable `overlay` and `br_netfilter` modules
+Enable `overlay` and `br_netfilter` module
 
 ```bash
 sudo cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf 
