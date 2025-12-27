@@ -151,6 +151,22 @@ kolla-ansible install-deps
 
 ### Setup Configuration
 
+Edit ansible configuration
+
+```bash
+sudo mkdir -p /etc/ansible
+sudo nano /etc/ansible/ansible.cfg
+```
+
+Adjust the fork value, don't set it too high or too low. Adjust it according to your network bandwidth.
+
+```bash
+[defaults]
+host_key_checking=False
+pipelining=True
+forks=20
+```
+
 Edit inventory, in my case i choose multinode.
 
 ```bash
