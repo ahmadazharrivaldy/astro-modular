@@ -78,7 +78,7 @@ Export helm values of Ceph CSI
 helm inspect values ceph-csi/ceph-csi-rbd > ceph-csi-rbd-values.yaml
 ```
 
-Edit helm values and replace it with our Ceph information
+Edit helm values and replace it with our Ceph information 
 
 ```yaml
 ...

@@ -8,38 +8,23 @@ aliases:
   - about-me
   - about-us
 ---
-Welcome to my 
+Since **November 2021**, I have been working at **PT Boer Technology (Btech)**. I love working with technology, especially building and managing systems in the cloud. I enjoy solving problems and making sure applications run smoothly and reliably.
 
-## Philosophy
+## What I do
 
-Great content deserves great presentation without complexity. This blog theme is built on four core principles:
+I have a strong background in **Networking** and focus on **Cloud** and **DevOps**. Here are the main tools and technologies I use:
 
-### Clarity First
-Content should be the star, not the design. Every element is carefully crafted to enhance readability and focus attention on what matters most - your ideas and writing.
+- **Cloud Platform:** I can operate **OpenStack**, **Kubernetes**, and **Juju**.
+- **Operating Systems:** I am very comfortable using **Linux**, especially **Ubuntu** and **Red Hat**.
+- **Monitoring:** I use tools like **Grafana**, **Prometheus**, **Zabbix**, and **Graylog** to make sure systems are working correctly.
 
-### Highly Performant
-Fast loading times and smooth interactions are not optional. Every aspect of this theme has been optimized to deliver exceptional performance across all devices.
+## Sharing is Caring
 
-### Works with Obsidian
-If you use Obsidian, this theme is a natural extension of your workflow. All rich markdown and extended markdown features, including Wikilinks, callouts, and other embedded features, display seamlessly between your vault and published site.
+I also run a personal blog called **dombajantan**. I started this blog because I want to share what I learn with others for **free**. I believe that by sharing knowledge, we can all grow together.
 
-### Modular Design
-Every feature can be toggled on or off through a single configuration file. Enable only what you need, keeping your site fast and focused on your specific use case.
+## Let's Get in Touch!
 
----
+I am always happy to connect with other tech lovers or anyone interested in cloud technology.
 
-## Pages to Check Out
-
-- [Contact](pages/contact.md) page with a form
-- [Thank You](pages/thank-you.md) page where submitters are directed after a successful submission 
-- [Privacy Policy](pages/privacy-policy.md) page
-
----
-
-## Posts to Check Out
-- [[getting-started|Getting Started]]
-- [Astro Suite Vault (Modular) Guide](posts/astro-suite-vault-modular-guide.md) 
-
----
-![Water droplet](attachments/water.png)
-*Photo by [Herbert Goetsch](https://unsplash.com/@hg_photo?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*
+- **LinkedIn:** https://www.linkedin.com/in/rivaldy-ahmad-azhar/
+- **Email:** ahmadazharrivaldy@gmail.com
