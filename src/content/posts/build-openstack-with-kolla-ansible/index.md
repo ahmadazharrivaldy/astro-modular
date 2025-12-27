@@ -1,9 +1,9 @@
 ---
-title: "Build OpenStack with Kolla Ansible"
+title: Build OpenStack with Kolla Ansible
 date: 2025-12-27
 description: ""
 tags: []
-image: ""
+image: attachments/cloud.png
 imageAlt: ""
 imageOG: false
 hideCoverImage: false
