@@ -225,6 +225,15 @@ cinder_cluster_name: "cinder-volumes"
 ...
 ```
 
+Ensure access between hosts is accessible without permission restrictions like passwords, so you can create an RSA key first and import it to each host.
+
+```bash
+ssh-keygen -t rsa
+ssh-copy-id root@controller
+ssh-copy-id root@compute01
+ssh-copy-id root@compute02
+```
+
 Bootstap the hosts
 
 ```bash
