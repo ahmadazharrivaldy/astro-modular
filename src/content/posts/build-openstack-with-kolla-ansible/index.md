@@ -106,7 +106,7 @@ netplan apply
 Create a virtual environment and activate
 
 ```bash
-python3 venv kolla-env
+python3 -m venv kolla-env
 source kolla-env/bin/activate
 ```
 
