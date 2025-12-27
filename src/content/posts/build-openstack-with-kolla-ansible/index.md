@@ -60,7 +60,7 @@ Install python dependencies
 sudo apt install -y git python3-dev libffi-dev gcc libssl-dev libdbus-glib-1-dev python3-venv
 ```
 
-### Create empty IP Address for External Network
+### Create an Empty IP Address for External Network
 
 Edit network configuration
 
