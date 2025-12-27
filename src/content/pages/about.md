@@ -1,6 +1,6 @@
 ---
 title: About
-description: Learn more about Astro Modular and the philosophy behind its design approach.
+description: Let's get to know each other
 noIndex: false
 hideTOC: false
 draft: false
