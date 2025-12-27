@@ -23,7 +23,7 @@ To simplify my OpenStack deployment, I chose Kolla. It provides production-ready
 
 ## Setup on Compute Host
 
-## Create cinder-volumes vgroup
+### Create cinder-volumes vgroup
 
 Update and upgrade the linux package lists
 
