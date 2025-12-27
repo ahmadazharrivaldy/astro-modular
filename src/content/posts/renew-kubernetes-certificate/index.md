@@ -13,11 +13,10 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 ---
-After you create a Kubernetes cluster, you must maintain expiration date of the Kubernetes certificate, because if the certificate expires, communication between Kubernetes components or APIs will fail.
-
+After creating a Kubernetes cluster, you must track the certificate expiration dates. If these certificates expire, communication between Kubernetes components and APIs will fail, leading to cluster instability. Maintaining these certificates is essential to ensure continuous uptime.
 ## Backup Kubernetes Certificate
 
-Check expired date of Kubernetes certificate
+Check expiration date of Kubernetes certificates
 
 ```bash
 ## for > v1.20
@@ -27,22 +26,22 @@ kubeadm certs check-expiration
 kubeadm alpha certs check-expiration
 ```
 
-Health check before renew certificate
+Run a health check before renewing your Kubernetes certificates
 
 ```bash
 kubectl get --raw='/readyz?verbose'
 ```
 
-Backup Kubernetes certificate
+Backup Kubernetes certificates
 
 ```bash
-mkdir -p backup_k8s_certs/temporary/
-sudo cp -r /etc/kubernetes/ ~/backup_k8s_certs
+mkdir -p backup-kube-certs/temp
+sudo cp -r /etc/kubernetes/ ~/backup-kube-certs
 ```
 
 ## Renew Kubernetes Certificate
 
-Renew all certificate
+Renew all Kubernetes certificates
 
 ```bash
 ## for > v1.20
@@ -52,18 +51,18 @@ kubeadm certs renew all
 kubeadm alpha certs renew all
 ```
 
-Restart kube-system pods to apply new certificate
+Restart kube-system pods to apply new certificates
 
 ```bash
-sudo mv /etc/kubernetes/manifests/ ~/backup_k8s_certs/temporary/
+sudo mv /etc/kubernetes/manifests/ ~/backup-kube-certs/temp/
 sleep 120
-sudo mv ~/backup_k8s_certs/temporary/ /etc/kubernetes/manifests/
+sudo mv ~/backup-kube-certs/temp/ /etc/kubernetes/manifests/
 ```
 
-Make sure age of pods is changed, because this is indication these pods is restarted.
+Verify that the age of the pods has been changed, as this indicates that the pods have been restarted.
 
 ```bash
-kubectl -n kube-system get pods -o wide --field-selector=spec.nodeName=CHANGE_WITH_YOUR_MASTER_NODE_NAME
+kubectl -n kube-system get pods -o wide --field-selector=spec.nodeName=CHANGE_WITH_YOUR_MASTER_NODE_NAME | egrep "kube-apiserver|kube-controller-manager|kube-scheduler|etcd"
 ```
 
 ```bash
