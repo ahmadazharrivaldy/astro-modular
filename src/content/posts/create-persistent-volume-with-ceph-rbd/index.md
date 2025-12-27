@@ -14,7 +14,7 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 ---
-In my environment I already have Ceph cluster, so i decided to use it for persistent volume backend storage on my Kubernetes cluster. So how i create it? lets go to the tutorial.
+Since I already have an existing Ceph cluster in my environment, I decided to leverage it as the persistent volume backend for my Kubernetes cluster. Integrating Ceph ensures that my stateful applications have reliable, scalable, and high-performance storage.
 
 ## Environment
 ### Ceph cluster
@@ -32,9 +32,9 @@ In my environment I already have Ceph cluster, so i decided to use it for persis
 | worker01 | 192.168.10.11 |
 | worker02 | 192.168.10.12 |
 
-## Deploy Ceph CSI RBD
+## Deploy Ceph CSI
 
-Get the fsid and Ceph mon IP Address
+Get the IP address of Ceph monitor and fsid.
 
 ```bash
 ceph mon dump
@@ -49,14 +49,14 @@ min_mon_release 15 (octopus)
 1: [v2:192.168.10.31:3300/0,v1:192.168.10.31:6789/0] mon.ceph-node02
 ```
 
-Add Ceph CSI RBD repository
+Add the Ceph CSI repository
 
 ```bash
 helm repo add ceph-csi https://ceph.github.io/csi-charts
 helm repo update
 ```
 
-Create osd pool for Kubernetes persistent volume
+Create an OSD pool for Kubernetes persistent volumes
 
 ```bash
 ceph osd pool create kubernetes 64 64
@@ -64,7 +64,7 @@ rbd pool init kubernetes
 ceph auth get-or-create client.kubernetes mon 'profile rbd' osd 'profile rbd pool=kubernetes' mgr 'profile rbd pool=kubernetes'
 ```
 
-Get user key
+Get an user key
 
 ```bash
 ceph auth get-key client.kubernetes | base64
@@ -72,13 +72,13 @@ ceph auth get-key client.kubernetes | base64
 QVFEWUkxVm9EVnRFRXhBQWRwcW1adExpdXFIaEJYQjduYXVRL3c9PQ==
 ```
 
-Export helm values
+Export helm values of Ceph CSI
 
 ```bash
 helm inspect values ceph-csi/ceph-csi-rbd > ceph-csi-rbd-values.yaml
 ```
 
-Edit helm values and change with our Ceph information
+Edit helm values and replace it with our Ceph information
 
 ```yaml
 ...
@@ -115,14 +115,14 @@ secret:
 ...
 ```
 
-Deploy it
+Deploy
 
 ```bash
 kubectl create namespace ceph-csi-rbd
 helm install --namespace ceph-csi-rbd ceph-csi-rbd ceph-csi/ceph-csi-rbd --values ceph-csi-rbd-values.yaml
 ```
 
-Try to create persistent volume
+Create a persistent volume claim
 
 ```bash
 cat > ceph-rbd-sc-pvc.yaml <<EOF
@@ -146,7 +146,7 @@ kubectl apply -f ceph-rbd-sc-pvc.yaml
 
 ## Verify
 
-Make sure your persistent volume claim is bound and persistent volume automatically created
+Make sure that your persistent volume claim is bound and persisten volume is created automatically
 
 ```bash
 kubectl get pvc
