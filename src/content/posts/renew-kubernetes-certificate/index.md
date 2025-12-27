@@ -1,5 +1,5 @@
 ---
-title: Renew Kubernetes Certificate
+title: Renew Kubernetes Certificates
 date: 2025-12-22
 description: ""
 tags:
@@ -14,7 +14,7 @@ targetKeyword: ""
 draft: false
 ---
 After creating a Kubernetes cluster, you must track the certificate expiration dates. If these certificates expire, communication between Kubernetes components and APIs will fail, leading to cluster instability. Maintaining these certificates is essential to ensure continuous uptime.
-## Backup Kubernetes Certificate
+## Backup Kubernetes Certificates
 
 Check expiration date of Kubernetes certificates
 
@@ -39,7 +39,7 @@ mkdir -p backup-kube-certs/temp
 sudo cp -r /etc/kubernetes/ ~/backup-kube-certs
 ```
 
-## Renew Kubernetes Certificate
+## Renew Kubernetes Certificates
 
 Renew all Kubernetes certificates
 

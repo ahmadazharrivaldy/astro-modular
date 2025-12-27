@@ -14,12 +14,9 @@ hideTOC: false
 targetKeyword: ""
 draft: false
 ---
-Rancher is my option to manage Kubernetes Cluster, because easy to use and a lot of features to help operate the cluster. Rancher is one of the best Kubernetes distribution I've ever used.
+Rancher is my preferred platform for managing Kubernetes clusters due to its ease of use and extensive feature set. It consistently stands out as one of the best distributions I’ve used to streamline day-to-day operations.
 
 ## Environment
-
-I already provisioned 1 server and 2 agent with minimum specification requirement. 
-
 
 | Hostname | IP Address    | CPU | Memory | Disk |
 | -------- | ------------- | --- | ------ | ---- |
@@ -28,7 +25,7 @@ I already provisioned 1 server and 2 agent with minimum specification requiremen
 | agent02  | 192.168.10.22 | 4   | 8GB    | 50GB |
 ## Configure All Hosts
 
-Update and upgrade linux package lists
+Update and upgrade the linux package lists
 
 ```bash
 sudo apt update && sudo apt upgrade -y
@@ -51,7 +48,7 @@ sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 ```
 
-Enable `overlay` and `br_netfilter` module
+Enable `overlay` and `br_netfilter` modules
 
 ```bash
 sudo cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf 
@@ -106,7 +103,7 @@ cni:
 EOF
 ```
 
-Create yaml manifest to deploy Nginx Ingress
+Create yaml manifest to deploy NGINX Ingress (Optional)
 
 ```bash
 cat <<EOF | tee /var/lib/rancher/rke2/server/manifests/rke2-ingress-nginx-config.yaml
@@ -142,14 +139,14 @@ sudo systemctl start rke2-server
 sudo systemctl enable rke2-server
 ```
 
-Add these variable to `.bashrc.`
+Add these variable to `.bashrc`
 
 ```bash
 echo "export PATH=$PATH:/var/lib/rancher/rke2/bin" >> $HOME/.bashrc
 echo "export KUBECONFIG=/etc/rancher/rke2/rke2.yaml"  >> $HOME/.bashrc
 ```
 
-For add another host to the cluster, use this token.
+To add another host to the cluster, use this token.
 
 ```bash
 cat /var/lib/rancher/rke2/server/node-token
@@ -166,7 +163,7 @@ Create RKE2 directory
 mkdir -p /etc/rancher/rke2/
 ```
 
-Create yaml manifest to join agent host to the cluster
+Create yaml manifest to join the agent host to the cluster
 
 ```bash
 cat <<EOF | tee /etc/rancher/rke2/config.yaml
@@ -199,7 +196,7 @@ chmod 700 get_helm.sh
 ./get_helm.sh
 ```
 
-Add Rancher Dashboard repository and deploy it
+Add Rancher Dashboard repository and deploy
 
 ```bash
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
@@ -211,5 +208,7 @@ helm install rancher rancher-stable/rancher \
   --set bootstrapPassword='P@ssw0rd123456' \
   --set tls=external
 ```
+
+Result
 
 ![](rancher_dashboard.png)
