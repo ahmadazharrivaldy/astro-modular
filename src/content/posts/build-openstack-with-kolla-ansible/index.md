@@ -9,7 +9,7 @@ imageOG: false
 hideCoverImage: false
 hideTOC: false
 targetKeyword: ""
-draft: true
+draft: false
 ---
 To simplify my OpenStack deployment, I chose Kolla. It provides production-ready Docker containers and Ansible playbooks, making it one of the most user-friendly tools for managing the lifecycle of an OpenStack cluster.
 
