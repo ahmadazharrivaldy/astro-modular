@@ -252,7 +252,7 @@ Proceed to actual OpenStack deployment, it takes up to 1 hour.
 kolla-ansible deploy -i ~/multinode
 ```
 
-### Verify
+## Verify
 
 Install Openstack client CLI
 
